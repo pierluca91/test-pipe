@@ -23,3 +23,11 @@ jobs:
 
       - name: Build Angular App
         run: npm run build
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: "ftp://testwent.eu:21"
+          ftp-username: "GitHub"
+          ftp-password: "w3nt3rpr1s3!"
+          local-dir: "dist/"
