@@ -22,7 +22,4 @@ jobs:
         run: npm install
 
       - name: Build Angular App
-        run: npm run build --prod
-
-      - name: Print Dist Folder Location
-        run: echo "Dist Folder is located at: $(pwd)/dist"
+        run: npm run build
